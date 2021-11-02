@@ -1,0 +1,85 @@
+_______ANGULAR CORE NOTES_______
+
+Framework: piattaforma di sviluppo
+
+creiamo SPA single page appications (1 unico file)
+applicazioni client che girano sul browser dell'utente
+client -> http req al server -> server res unico file corredato da librerie scritte in file js (non
+in ts viene transpilato)
+il file che arriva è index.html che contiene la nostra app in angular
+
+typesctipt superset di js
+
+Angular nasce grazie a un team di google per creare un framework che gestisce pagine web responive 
+angular è chiamato così per <> le brackets quindi angular bracket
+Angular JS (perchè era scritto tutto in javascript) (2010)
+Dal 2014 in poi si adatta alle modifiche di js adotta ts
+Angular è diverso, sono le nuove vers
+
+clicco nella nav bar per andare dall'index a una pagina di dettaglio
+è già contenuto nell'unico file statico ricevuto -> navigazione veloce
+se servono elementi dinamici si fanno delle http-get
+
+Ottimo per le applicazioni resposive
+*css modifica gli stili con le media queries*
+Tablet meglio soluzioni us + centrate
+Tel tutto messo in verticale
+Possiamo usare css nativo, sass, o librerie esterne come bootstarap(anche lui usa me media queries)
+
+________________________________________________________________________________________________________
+
+To create a new node prj
+npm init (new node app)
+
+package.json è creato (è il file delle dipendenze che permette di usare elementi presenti in altre location)
+
+npm update/ install XXX
+
+To install Angular
+npm install -g @angular/cli
+ng verion or ng v
+
+__________________________________
+
+COMPONENTI PRINCIPALI APP ANGULAR
+
+un app angulare è costituita da components
+COMPONENETE : un pezzo di programma di cui vediamo la parte grafica(template:html+css) ma
+è costituito da template + classse typescri + file metadati
+(riconosciuto da direttive html)
+
+SERVIZI: permettono ai componenti di scambiarsi i dati e parlare con il b-end
+
+MODULI
+elementi principali di un app angular,
+contenitori modulari di codice @NgModule
+gestisce 
+classe typescript che contiene il decoratore   che si trova nelle librerie principali di ang 
+AppMOdule: gestore dell'avvio della nostr
+
+Nuova App Application
+ng new nomeapplicazione(app01)
+
+
+to compile ts>js e to create bundle= librerie js, stile syles
+ng serve
+
+angular.json = oggetto js
+
+Tutto il contenuto del single file sta in <approot> può avere solo un istanza
+
+ctrl-c close connection
+
+crtrl +a select all
+
+localhost:2400
+
+ng serve --open/-o
+
+
+
+cartella asset mettiamo i file di corredo della nostra app, sono embedded content
+
+
+GLOBAL CSS VIENE SOVRASCRITTO DA CSS PIù SPECIFICI
+I FOGLI ESTERNI PERDONO SUGLI INCORPORATI E IL CSS INLINE VINCE SU TUTTI

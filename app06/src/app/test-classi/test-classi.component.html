@@ -1,0 +1,20 @@
+<h3>CLASSI</h3>
+<ul>
+    <li>Nome: {{persona.nome}}</li>
+    <li>Cognome: {{persona.cognome}}</li>
+    <li>Anni: {{persona.anni}}</li>
+</ul>
+
+<p>Dati Persone</p>
+<ul>
+    <li *ngFor="let p of elencoPersone">
+        <p>{{persona.cognome}} {{persona.nome}} - {{persona.anni}}</p>
+    </li>
+</ul>
+
+<p>Dati Lovers</p>
+<ul>
+    <li *ngFor="let p of listaPersone">
+        <p>{{persona.cognome}} {{persona.nome}} - {{persona.anni}}</p>
+    </li>
+</ul>

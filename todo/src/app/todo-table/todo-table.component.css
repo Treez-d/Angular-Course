@@ -1,0 +1,15 @@
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    border-bottom: solid black 1px;
+}
+
+.completed {
+    background-color: mediumspringgreen;
+}
+
+.todo {
+    background-color: tomato;
+}

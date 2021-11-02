@@ -1,0 +1,35 @@
+<div class="container">
+    <h2>liste</h2>
+    <h3>lista semplice</h3>
+    <ul class="list-group">
+        <li class="list-group-item">cat</li>
+        <li class="list-group-item">dog</li>
+        <li class="list-group-item">bird</li>
+        <li class="list-group-item">fish</li>
+    </ul>
+    <h3>lista mouse over</h3>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-action">cat</li>
+        <li class="list-group-item list-group-item-action">dog</li>
+        <li class="list-group-item list-group-item-action">bird</li>
+        <li class="list-group-item list-group-item-action">fish</li>
+    </ul>
+    <h3>lista pulsanti</h3>
+    <div class="list-group">
+        <button class="list-group-item">banana</button>
+        <button class="list-group-item">cola</button>
+        <button class="list-group-item">honey</button>
+    </div>
+    <h3>lista link</h3>
+    <nav class="list-group">
+        <a href="" class="list-group-item">hi</a>
+        <a href="" class="list-group-item">we're</a>
+        <a href="" class="list-group-item">links</a>
+    </nav>
+
+    <h3>Lista dinamica</h3>
+    <input type="text" (input)="choose($event)"> Choose a color
+    <ul class="list-group">
+        <li href="" *ngFor="let v of voci" class="list-group-item" [class.active]="v == scelta">{{v}}</li>
+    </ul>
+</div>

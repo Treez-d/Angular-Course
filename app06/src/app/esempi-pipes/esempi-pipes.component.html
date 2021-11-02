@@ -1,0 +1,33 @@
+<h3>PIPES</h3>
+<p>fanno vedere in maniera diversa i dati, non li modifica li formatta</p>
+<h2>Numeri</h2>
+<p>Numero: {{num | number : '2.1-2'}}</p>
+<p>Numero: {{num | number : '2.1-0'}}</p>
+<p>Numero: {{num | number : '2.1-2'}}</p>
+<h2>Stringhe</h2>
+<p>nome: {{nome}}</p>
+<p>nome: {{nome | uppercase}}</p>
+<p>nome: {{nome | lowercase}}</p>
+<p>nome: {{nome |slice:2}}</p>
+<p>nome: {{nome |slice:0:1}}</p>
+<p>nome: {{nome |slice:-1}}</p>
+<p>nome: {{nome |slice:0:3}}</p>
+<p>nome: {{nome |slice:0:3 | uppercase}}</p>
+<h2>Percentage</h2>
+<p>iva {{iva}}</p>
+<p>iva {{iva | percent}}</p>
+<h2>Date e Orari</h2>
+<p>oggi: {{oggi}}</p>
+<p>oggi: {{oggi | date}}</p>
+<p>year: {{oggi | date: 'yyyy'}}</p>
+<p>ita date: {{oggi | date: 'dd-MMM-y'}}</p>
+<p>ita date: {{oggi | date: 'dd MMMM y'}}</p>
+<p>ita date: {{oggi | date: 'E dd MMMM y'}}</p>
+<p>ita date: {{oggi | date: 'EEEE MMMM dd y, hh:mm:ss'}}</p>
+<p>short time: {{oggi | date: 'shortTime'}}</p>
+<p>date: {{oggi | date: 'full'}}</p>
+<h2>Valute</h2>
+<p>prezzo: {{price}}</p>
+<p>prezzo: {{price | currency}}</p>
+<p>prezzo: {{price | currency : '£'}}</p>
+<p>prezzo: {{price | currency : 'EUR'}}</p>

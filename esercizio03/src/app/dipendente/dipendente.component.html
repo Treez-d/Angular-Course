@@ -1,0 +1,23 @@
+<div class="container">
+
+    <p class="box-title">Dipendente Cod.{{dipendente.codice}}</p>
+
+    <img [src]="dipendente.immagine">
+    <div class="info-dip">
+        <h3>Dati anagrafici</h3>
+        <p>Cognome: {{dipendente.cognome}}</p>
+        <p>Nome: {{dipendente.nome}}</p>
+        <p>Data di assunzione:{{dipendente.assunzione}}</p>
+        <p>Indirizzo: {{dipendente.indirizzo}}</p>
+        <p>CAP: {{dipendente.cap}}</p>
+        <p>Città: {{dipendente.citta}}</p>
+        <button (click)="showInfo()">
+            {{attributo? 'Mostra' : 'Nascondi'}} infomazioni di contatto</button>
+        <div [hidden]="attributo" class="info">
+            <h3>Informazioni di contatto</h3>
+            <p>Telefono: {{dipendente.telefono}}</p>
+            <p>E-mail: {{dipendente.email}}</p>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,65 @@
+<h2>HTML5 forms</h2>
+
+<form action="http://awebsite.com/home.php">
+    <label for="nome">Nome:</label> <br>
+    <!-- grandezza visibile -->
+    <input type="text" id="nome" size="10"><br>
+    <label for="cognome">Cognome:</label> <br>
+    <!-- lunghezza elemento -->
+    <!-- per non fare vedere il digitato in precedenza autocomplete="off" -->
+    <input type="text" id="cognome" maxlength="5" autocomplete="off"><br>
+    <!-- dobbiamo mettere solo  numeri qui! -->
+    <label for="anni">Anni</label> <br>
+    <input type="number" id="anni" min="30" max="90"> <br>
+    <!-- required => campo obbligatorio -->
+    <label for="password">Password:</label> <br>
+    <input type="password" id="password" required><br>
+    <!-- elementi invisibili/disattivati - il valore verrà inviato ma non modificato-->
+    <label for="codice">Codice:</label> <br>
+    <input type="text" name="codice" id="codice" disabled value="71"><br>
+    <!-- hidden permission, ruoli utente, etc l'elemento è inviato ma non visualizzato-->
+    <input type="hidden" value="8">
+    <fieldset>
+        <legend>Hungry?</legend>
+        <input type="radio" name="hungry" id="hungerYes" value="yes">
+        <label for="radio">YES</label> <br>
+        <input type="radio" name="hungry" id="hungerNo" value="no">
+        <label for="radio">NO</label>
+    </fieldset>
+    <label for="telefono">Phone number:</label> <br>
+    <input type="tel" name="telefono" id="telefono" pattern="+39-[0-9]{3}-[0-9]{4,7}" placeholder="+39-000-0000"> <br>
+    <label for="email">E-mail:</label> <br>
+    <input type="email" name="email" id="email" placeholder="info@mail.com">
+
+    <fieldset>
+        <legend>Hobbies:</legend>
+        <input type="checkbox" name="interest" id="intMusic" value="music">
+        <label for="intMusic">Music</label><br>
+        <input type="checkbox" name="interest" id="intDrawing" value="drawing">
+        <label for="intDrawing">Drawing</label><br>
+        <input type="checkbox" name="interest" id="intSport" value="sport">
+        <label for="intSport">Sport</label>
+    </fieldset>
+
+    <label for="datacolloquio">Data Colloquio:</label> <br>
+    <input type="date" name="datacolloquio" id="datacolloquio" min="2021-12-01" max="2022-02-15"> <br>
+    <label for="oracolloquio">Ora Colloquio:</label> <br>
+    <input type="time" name="oracolloquio" id="oracolloquio" min="09:00" max="12:00"><br>
+
+    <label for="cv">Carica il tuo CV:</label> <br>
+    <input type="file" name="cv" id="cv"> <br>
+
+    <label for="esperienza">Esperienza: </label> <br>
+    <!-- multiple ti permetter di selezionare più di un'opzione tenendo premutro ctrl -->
+    <select name="esperienza" id="esperienza" multiple>
+        <option value="junior">Fino a 3 anni</option>
+        <option value="senior">Oltre 3 anni</option>  
+    </select><br>
+
+    <label for="commenti">Lascia un commento:</label> <br>
+    <textarea name="commenticommenti" id="commenti" cols="30" rows="10"></textarea> <br>
+
+    <input type="submit" value="invia" style="margin-top:10px;">
+    <input type="reset" value="cancella">
+
+</form>

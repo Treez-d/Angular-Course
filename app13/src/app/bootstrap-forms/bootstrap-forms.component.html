@@ -1,0 +1,86 @@
+<h2>Bootsrap Forms</h2>
+
+<form action="http://awebsite.com/home.php" class="w-50" ngNativeValidate>
+    <label for="nome" class="form-label ">Nome:</label> <br>
+    <!-- grandezza visibile -->
+    <input type="text" id="nome" size="10" class="form-control"><br>
+    <label for="cognome" class="form-label">Cognome:</label>
+    <!-- lunghezza elemento -->
+    <!-- per non fare vedere il digitato in precedenza autocomplete="off" -->
+    <input type="text" id="cognome" maxlength="5" autocomplete="off" class="form-control">
+    <!-- dobbiamo mettere solo  numeri qui! -->
+    <label for="anni" class="form-label">Anni:</label>
+    <input type="number" id="anni" min="30" max="90" class="form-control">
+    <!-- required => campo obbligatorio -->
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" id="password" required class="form-control">
+    <!-- elementi invisibili/disattivati - il valore verrà inviato ma non modificato-->
+    <label for="codice" class="form-label">Codice:</label>
+    <input type="text" name="codice" id="codice" disabled value="71" class="form-control-plaintext"><br>
+    <!-- hidden permission, ruoli utente, etc l'elemento è inviato ma non visualizzato-->
+    <input type="hidden" value="8">
+    <fieldset class="mb-3">
+        <legend>Hungry?</legend>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="hungry" id="hungerYes" value="yes">
+            <label class="form-check-label" for="radio">YES</label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" name="hungry" id="hungerNo" value="no" checked>
+            <label for="radio" class="form-check-label">NO</label>
+        </div>
+    </fieldset>
+    <div class="input-group">
+        <label for="telefono" class="input-group-text">Phone number:</label>
+        <input type="tel" name="telefono" id="telefono" class="form-control" pattern="+39-[0-9]{3}-[0-9]{4,7}" placeholder="+39-000-0000">
+    </div>
+    <div class="input-group mb-3">
+        <label for="email" class="input-group-text">E-mail:</label>
+        <input type="email" name="email" id="email" class="form-control mb-3" placeholder="info@mail.com">
+    </div>
+
+
+    <fieldset class="mb-3">
+        <legend>Hobbies:</legend>
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="interest" id="intMusic" value="music">
+            <label for="intMusic" class="form-check-label">Music</label><br>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="interest" id="intMusic" value="music">
+            <label for="intMusic" class="form-check-label">Music</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="interest" id="intDrawing" value="drawing">
+            <label for="intDrawing" class="form-check-label">Drawing</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input type="checkbox" class="form-check-input" name="interest" id="intSport" value="sport">
+            <label for="intSport" class="form-check-label">Sport</label>
+        </div>
+
+
+    </fieldset>
+
+    <label for="datacolloquio" class="form-label">Data Colloquio:</label> <br>
+    <input type="date" class="form-control" name="datacolloquio" id="datacolloquio" min="2021-12-01" max="2022-02-15"> <br>
+    <label for="oracolloquio" class="form-label">Ora Colloquio:</label> <br>
+    <input type="time" class="form-control" name="oracolloquio" id="oracolloquio" min="09:00" max="12:00"><br>
+
+    <label for="cv" class="form-label">Carica il tuo CV:</label>
+    <input type="file" class="form-control mb-3" name="cv" id="cv">
+
+    <label for="esperienza" class="form-label">Esperienza: </label>
+    <!-- multiple ti permetter di selezionare più di un'opzione tenendo premutro ctrl -->
+    <select class="form-control mb-3" name="esperienza" id="esperienza" multiple>
+        <option value="junior">Fino a 3 anni</option>
+        <option value="senior">Oltre 3 anni</option>  
+    </select><br>
+
+    <label for="commenti" class="form-label">Lascia un commento:</label> <br>
+    <textarea name="commenticommenti" class="form-control mb-3" id="commenti" cols="30" rows="10"></textarea> <br>
+
+    <input type="submit" value="invia" style="margin-top:10px;" class="btn btn-primary">
+    <input type="reset" value="cancella" class="btn btn-warning">
+
+</form>

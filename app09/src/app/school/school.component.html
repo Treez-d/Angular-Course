@@ -1,0 +1,16 @@
+<h3>SCHOOL</h3>
+<P>STUDENT LIST</P>
+<button (click)="sortStudentsByMedia()">media{{orderMediaAsc?'  🔽': '  🔼'}}</button>
+<button (click)="sortStudentsByMatricola()">matricola{{orderMediaAsc?'  🔽': '  🔼'}}</button>
+<table>
+    <tr>
+        <th>matricola</th>
+        <th>nome</th>
+        <th>media</th>
+    </tr>
+    <tr *ngFor="let s of studenti">
+        <td>{{s.matricola}}</td>
+        <td>{{s.nome}}</td>
+        <td>{{s.media}}</td>
+    </tr>
+</table>

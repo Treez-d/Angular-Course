@@ -1,0 +1,18 @@
+nav {
+    background-color: steelblue;
+    padding: 10px;
+}
+
+a:link,
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a.active {
+    text-decoration: underline;
+}
+
+a {
+    margin-right: 20px;
+}

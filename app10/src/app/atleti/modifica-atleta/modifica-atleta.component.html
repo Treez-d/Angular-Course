@@ -1,0 +1,9 @@
+<h2>Edit Athlete ID_{{atleta.id}} form</h2>
+
+<p>
+    <input type="text" #nome [value]="atleta.nome"> nome <br>
+    <input type="text" #punti value="{{atleta.punteggio}}"> punti <br>
+    <button (click)="conferma(nome, punti)">ok</button>
+    <button routerLink="/atleti/{{atleta.id}}">undo</button>
+    <button (click)="delete()">delete</button>
+</p>

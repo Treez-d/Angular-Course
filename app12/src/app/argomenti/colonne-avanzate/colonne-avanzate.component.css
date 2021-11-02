@@ -1,0 +1,9 @@
+.row {
+    border: 2px solid salmon;
+}
+
+.col,
+.col-3,
+col-4 {
+    border: 2px solid lightseagreen;
+}

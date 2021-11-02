@@ -1,0 +1,26 @@
+<h1>STRING INTERPOLATION</h1>
+<h3>Contenuto da un attributo verso un tag:</h3>
+<!--  || OR   (also pipe..)-->
+<p>{{nome || 'Beomgyu'}}</p>
+<p>Benvenuto <span>{{nome}}</span></p>
+
+<h3>CALCOLO</h3>
+<p>Prezzo</p>
+<p>Numero Pezzi</p>
+<p>TOT: {{ prezzo * numeroPezzi }}</p>
+
+<h3>METODI</h3>
+<p>{{nome + ' ' +cognome}}</p>
+<!-- ! si usa nella vista per dire che il valore c'è sicuramente-->
+<p>{{nome!.charAt(0) + '.' +cognome.charAt(0)+'.'}}</p>
+
+<h3>DATE E ORARI</h3>
+<p>Data di oggi verbose: {{oggi}}</p>
+<p>Data di oggi verbose: {{oggi.toLocaleDateString()}}</p>
+<p>Ora attuale: {{oggi.toLocaleTimeString()}}</p>
+
+<h3>PERCORSI</h3>
+<p>Collegamento: {{link}}</p>
+<p>Clicca
+    <a href="{{link}}">qui</a> per andare su google</p>
+<p>Immagine: <img src="{{'./'+imgPath}}" alt="SK" title="LOVE"></p>

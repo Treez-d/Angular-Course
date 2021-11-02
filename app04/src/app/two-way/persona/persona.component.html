@@ -1,0 +1,16 @@
+<h3>PERSONA</h3>
+<p>Dati anagrafici:</p>
+<ul>
+    <li>Nome: {{persona.nome}}</li>
+    <li>Cognome: {{persona.cognome}}</li>
+    <li>Anni: {{persona.anni}}</li>
+
+
+</ul>
+<!--evita un sacco di problemi nel caso vogliamo cambiare 1 sola cosa nel corm, così conserviamo i vecchi dati-->
+<p>Modifica</p>
+<div>
+    <input type="text" [(ngModel)]="persona.nome">Nome <br>
+    <input type="text" [(ngModel)]="persona.cognome">Nome <br>
+    <input type="text" [(ngModel)]="persona.anni">Nome <br>
+</div>

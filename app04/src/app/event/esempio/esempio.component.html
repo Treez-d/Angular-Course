@@ -1,0 +1,9 @@
+<h3>CHIAMATA METODI</h3>
+<!--   WE USE () FOR EVENTS-->
+<div>{{display}}</div>
+<button (click)="onClick()">click here</button>
+<button (click)="onReset()">reset</button>
+
+<h3>ATTIVARE/DISATTIVARE</h3>
+<input type="text" [disabled]="dis" name="username">
+<button (click)='changeStatus()'>{{dis? 'activate' : 'disable'}}</button>

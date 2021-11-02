@@ -1,0 +1,6 @@
+<p>gestione-orologi works!</p>
+<ul>
+    <li *ngFor='let o of elencoOrologi'>
+        {{o.vediOrario()+' '}} <button (click)='aumenta(o)'>+5</button>
+    </li>
+</ul>

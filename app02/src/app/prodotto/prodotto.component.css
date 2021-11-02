@@ -1,0 +1,30 @@
+.container {
+    width: 24%;
+    border-radius: 25px;
+    background-color: tomato;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 5px;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+h3,
+h4 {
+    padding: 1em;
+    color: white;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+.price {
+    text-align: right;
+    padding: 1em;
+    color: white;
+}

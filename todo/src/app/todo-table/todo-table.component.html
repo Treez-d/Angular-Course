@@ -1,0 +1,15 @@
+<table>
+    <thead>
+        <tr>
+            <th *ngFor="let h of tableHeaders">{{h}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of toDoList" class="{{ i.completed ? 'completed': 'todo'}}">
+            <td>{{i.userId}}</td>
+            <td>{{i.id}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.completed}}</td>
+        </tr>
+    </tbody>
+</table>

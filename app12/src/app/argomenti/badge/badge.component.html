@@ -1,0 +1,13 @@
+<div class="container">
+    <h2>badge</h2>
+    <p><span class="badge bg-dark">badge</span></p>
+    <p>Hai nuovi msg <span class="badge bg-danger rounded pill">badge</span></p>
+    <p *ngIf="msg; else nomsgs">
+        Hai nuovi msg <span class="badge bg-danger rounded pill">{{msg}}</span>
+    </p>
+    <ng-template #nomsgs>
+        Non ci sono messaggi
+    </ng-template>
+    <p><button (click)="incrementa()" class="btn btn-primary">+</button></p>
+
+</div>

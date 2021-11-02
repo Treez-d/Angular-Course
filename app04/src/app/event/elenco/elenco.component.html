@@ -1,0 +1,9 @@
+<h3>ELENCO EVENTI</h3>
+<p class="test" (click)='onClick()' (mouseover)='onMouseOver()' (mouseout)="onMouseOut()">TEST AREA</p>
+<div [innerHTML]='display'></div>
+
+<h4>eventi su elementi del form</h4>
+<p>
+    <!--     $event passiamo le info sull'evento MA NON HA CONTROLLO SULL'INPUT SERVONO DEI METODI DI VALIDAZIONE-->
+    <input type="text" (focus)='onFocus()' (blur)='onBlur()' (input)='onInput($event)'>
+</p>

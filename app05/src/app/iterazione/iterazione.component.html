@@ -1,0 +1,14 @@
+<h3>NG FOR - direttive di iterazione</h3>
+<p>elenco colori</p>
+<ul>
+    <li *ngFor="let c of colors">{{c}}</li>
+</ul>
+<p>elenco colori con index</p>
+<li *ngFor="let c of colors; let i=index">{{c}} of position {{i}}</li>
+<p>elenco oggetti di tipo persona</p>
+<ol>
+    <li *ngFor="let p of persone">{{p}}</li>
+</ol>
+<ol>
+    <li *ngFor="let p of persone">{{p.cognome + ' ' + p.nome}}</li>
+</ol>

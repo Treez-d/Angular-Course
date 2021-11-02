@@ -1,0 +1,63 @@
+.main-comp {
+    background-color: pink;
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    background-color: mediumpurple;
+    width: 100%;
+    height: 2em;
+    padding: 1em;
+    padding-bottom: 2em;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: monospace;
+    font-size: 3em;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+header {
+    font-size: 2.2em;
+    font-family: 'Press Start 2P', cursive;
+}
+
+nav {
+    background-color: #f495bf;
+    padding: 1em 4%;
+    text-align: center;
+}
+
+a {
+    margin: 0 2em;
+}
+
+main {
+    padding-left: 1em;
+    color: deeppink;
+}
+
+img {
+    width: 80%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    padding-left: none;
+}
+
+p {
+    height: 3em;
+    font-weight: 600;
+}
+
+a {
+    font-size: xx-large;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}

@@ -1,0 +1,12 @@
+h1,
+h3 {
+    color: red
+}
+
+#main-img {
+    width: 300px;
+}
+
+p:last-child {
+    color: green;
+}

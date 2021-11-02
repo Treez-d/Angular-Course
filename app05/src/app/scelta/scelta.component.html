@@ -1,0 +1,23 @@
+<h3>NG IF - direttive di scelta</h3>
+<p>si vede se visibile=true</p>
+<p *ngIf="visibile">il paragrafo si vede</p>
+<p>si vede se nascosto=true</p>
+<p *ngIf="!nascosto">il paragrafo nascosto</p>
+<p *ngIf="numero > 5">il paragrafo si vede se numero > 5</p>
+<app-random *ngIf="mostraComp"></app-random>
+
+<p>Dati persona</p>
+<div *ngif="!persona">
+    <p>Nome: {{persona.nome}}</p>
+    <p>Cognome: {{persona.cognome}}</p>
+</div>
+<h3>NG SWITCH - direttive di scelta</h3>
+<p [ngSwitch]="colore">
+    <span *ngSwitchCase="'blue'">VEDO IL MARE</span>
+    <span *ngSwitchCase="'yellow'">VEDO IL SOLE</span>
+    <span *ngSwitchCase="'red'">VEDO IL FUOCCO</span>
+    <span *ngSwitchCaseDefault>VEDO</span>
+
+
+
+</p>

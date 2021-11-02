@@ -1,0 +1,16 @@
+figure {
+    border: 2px solid red;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+img {
+    width: 80%;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 3em;
+    text-align: center;
+    color: red;
+}

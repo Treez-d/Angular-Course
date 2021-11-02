@@ -1,0 +1,18 @@
+<h3>Immagine</h3>
+<img [src]="percorsoImg" [alt]="altImg" bind-title="altImg" style="width: 500px; height: auto;">
+
+<h3>Links</h3>
+<a [href]="linkUrl">VLIVE</a>
+
+<h3>CONTENUTO DI UN TAG</h3>
+<p [innerHTML]='newContent'>contenuto iniziale</p>
+<div>
+    <span [innerHTML]='peso'>Peso pacco regalo [ME]: <span>0</span></span>
+</div>
+
+<h3>ACTIVE OR DISABLED</h3>
+<input type="text" name="" id="" [disabled]="bloccato">
+<button [disabled]="bloccato2">KUDOS</button>
+<h3>STYLE</h3>
+<p [style]="stileTesto">TESTO FORMATTATO</p>
+<p [class]="classeTesto">Paragrafo Evidenziato</p>
